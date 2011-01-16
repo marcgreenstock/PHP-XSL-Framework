@@ -1,0 +1,8 @@
+Header set Cache-Control "max-age=0"
+<FilesMatch "\.(gif|jpe?g|png|ico|swf|pdf|doc?x|css|txt|js)$">
+	Header set Cache-Control "max-age=290304000, public"
+</FilesMatch>
+RewriteEngine on
+RewriteBase /
+RewriteRule !\.(gif|jpe?g|png|ico|swf|pdf|doc?x|css|txt|js|php)$ index.php
+AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css

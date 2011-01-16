@@ -1,0 +1,2 @@
+RewriteEngine on
+RewriteRule !\.(jpg|gif|png|ico|txt|css|js|php)$ _frameset.php

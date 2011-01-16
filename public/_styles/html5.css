@@ -1,0 +1,331 @@
+body {
+	text-align: center;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-size: 80%;
+	color: #666;
+	background: #FFF url("/_images/black.gif") left 209px repeat-x;
+}
+.clear {
+	clear: both;
+}
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+.center {
+	text-align: center;
+}
+.border {
+	border: 1px solid #CCC;
+	padding: 0 1em;
+	margin-bottom: 1em;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+.error {
+	color: #F00;
+}
+img.left {
+	padding: 2px;
+	border: 1px solid #CCC;
+	margin-right: 1em;
+}
+img.right {
+	padding: 2px;
+	border: 1px solid #CCC;
+	margin-left: 1em;
+}
+a {
+	color: #333;
+	font-weight: bold;
+	text-decoration: none;
+}
+a:hover {
+	color: #999;
+}
+strong {
+	font-weight: bold;
+}
+del {
+	text-decoration: line-through;
+}
+pre {
+	border: 1px solid #999;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	font-size: 1.2em;
+	padding: 4px;
+	background-color: #EEE;
+	color: #000;
+	position: relative;
+	overflow: auto;
+}
+input[type = 'text'],
+select,
+textarea {
+	width: 97%;
+	border: 1px solid #999;
+	padding: 4px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+select {
+	width: 100%;
+}
+
+body > header,
+body > section {
+	width: 800px;
+	text-align: left;
+	margin: 0 auto;
+	position: relative;
+	display: block;
+}
+body > header {
+	z-index: 1000;
+}
+body > header h1 {
+	position: absolute;
+	top: 60px;
+}
+body > header img {
+	position: absolute;
+	width: 800px;
+	height: 237px;
+}
+body > header nav ul {
+	position: absolute;
+	top: 10px;
+	right: 200px;
+}
+body > header nav ul li {
+	float: left;
+	margin-left: 4em;
+	text-transform: uppercase;
+	position: relative;
+}
+body > header nav ul a {
+	line-height: 2em;
+	display: block;
+}
+body > header nav ul li ul {
+	position: absolute;
+	width: 20em;
+	top: -999px;
+	left: 0;
+	z-index: 10000;
+	margin-left: 1em;
+	background-color: #FFF;
+	-moz-box-shadow: 5px 5px 5px #CCC;
+	-webkit-box-shadow: 5px 5px 5px #CCC;
+}
+body > header nav ul .sfhover ul,
+body > header nav ul li:hover ul {
+	top: 2em;
+}
+body > header nav ul li:hover li {
+	margin-left: 0;
+	list-style-type: square;
+}
+body > header form {
+	position: absolute;
+	top: 10px;
+	right: 4px;
+	width: 180px;
+	text-align: right;
+}
+body > header label {
+	float: left;
+	width: 115px;
+}
+body > header label input {
+	width: 105px;
+}
+body > header strong {
+	display: none;
+}
+body > section {
+	padding-top: 320px;
+	display: block;
+}
+body > section > section {
+	margin-top: 1em;
+	width: 55%;
+	float: left;
+	display: block;
+}
+body > section > aside {
+	margin-top: 1em;
+	width: 35%;
+	float: right;
+	display: block;
+}
+body > section h2 {
+	font-weight: bold;
+	font-size: 1.2em;
+	line-height: 1.5em;
+	text-align: right;
+	margin-bottom: 1em;
+	border-bottom: 2px solid #CCC;
+	color: #333;
+}
+body > section h3 {
+	font-weight: bold;
+	line-height: 1.5em;
+	text-align: right;
+	margin-bottom: 1em;
+	border-bottom: 2px solid #CCC;
+	color: #333;
+}
+body > section h4 {
+	font-weight: bold;
+	text-decoration: underline;
+}
+body > section ul li {
+	list-style-type: circle;
+	margin-left: 2em;
+	line-height: 1.8em;
+}
+body > section p {
+	line-height: 1.8em;
+	margin-bottom: 1em;
+}
+body > section ol {
+	margin-left: 1em;
+}
+body > section ol li {
+	margin-left: 1em;
+	list-style-type: decimal;
+}
+
+/* Foot */
+body > footer {
+	clear: both;
+	background-color: #000;
+	color: #FFF;
+	margin: 5em 0 0 0;
+	display: block;
+}
+body > footer section {
+	margin: 0 auto;
+	width: 800px;
+	padding: 2em 0;
+	display: block;
+}
+body > footer section p {
+	width: 36em;
+	margin: 0 auto;
+	text-align: left;
+	font-weight: normal;
+}
+body > footer section p a {
+	font-weight: normal;
+	color: #FFF;
+	text-decoration: underline;
+}
+body > footer section p a:hover {
+	text-decoration: none;
+}
+body > footer section p img {
+	float: left;
+	margin-right: 1em;
+}
+body > footer nav {
+	margin: 0 0 1em 0;
+	padding: 1em 0 0 0;
+	display: block;
+	background: #FFF;
+}
+body > footer nav ul li {
+	display: inline;
+	padding: 0 1em;
+}
+
+/* Entries */
+article {
+	clear: both;
+	display: block;
+}
+article header {
+	position: relative;
+	display: block;
+}
+article header time {
+	position: absolute;
+	top: 0.5em;
+	font-style: italic;
+}
+article footer {
+	height: 4em;
+	display: block;
+}
+article footer ul {
+	float: right;
+}
+article footer li {
+	float: left;
+	margin-left: 1em;
+	text-transform: uppercase;
+}
+.comment {
+	border: 1px solid #CCC;
+	padding: 1em;
+	margin-bottom: 1em;
+	background-color: #F3F3F3;
+}
+.comment h3 {
+	text-decoration: underline;
+}
+#olderPosts {
+	float: left;
+}
+#newerPosts {
+	float: right;
+}
+
+/* UTF-8 Table */
+#utf8-table {
+	border-collapse: collapse;
+	font-family: monospace;
+	font-size: 1.2em;
+	margin: 0 auto;
+}
+#utf8-table th,
+#utf8-table td {
+	padding: 5px;
+	border: dotted 1px #000;
+	text-align: center;
+}
+#utf8-table th {
+}
+#utf8-table td {
+	font-size: 1.8em;
+}
+
+/* Property Table */
+.properties {
+	border-collapse: collapse;
+}
+.properties thead th {
+	background: #EEE;
+	border: 1px solid #CCC;
+	padding: 0.5em;
+	font-weight: bold;
+}
+.properties tbody th,
+.properties tbody td {
+	border: 1px solid #CCC;
+	padding: 0.5em;
+}
+.properties tbody th {
+	font-weight: bold;
+}
+.properties .center {
+	text-align: center;
+}
+.properties .right {
+	text-align: right;
+	float: none;
+}
